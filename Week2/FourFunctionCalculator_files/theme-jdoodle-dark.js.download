@@ -1,0 +1,110 @@
+define("ace/theme/jdoodle-dark", ["require", "exports", "module", "ace/lib/dom"], function (require, exports, module) {
+  exports.isDark = true;
+  exports.cssClass = "ace-jdoodle-dark";
+  exports.cssText = ".ace-jdoodle-dark .ace_gutter {\
+background: #0a0d12;\
+color: #7b838f\
+}\
+.ace-jdoodle-dark .ace_gutter-cell {\
+padding-left: 12px;\
+padding-right: 10px\
+}\
+.ace-jdoodle-dark .ace_print-margin {\
+width: 1px;\
+background: #1a1f29\
+}\
+.ace-jdoodle-dark {\
+background-color: #0a0d12;\
+color: #d1d5db\
+}\
+.ace-jdoodle-dark .ace_cursor {\
+color: #60a5fa\
+}\
+.ace-jdoodle-dark .ace_marker-layer .ace_selection {\
+background: rgba(96, 165, 250, 0.18)\
+}\
+.ace-jdoodle-dark.ace_multiselect .ace_selection.ace_start {\
+box-shadow: 0 0 3px 0px #0a0d12;\
+}\
+.ace-jdoodle-dark .ace_marker-layer .ace_step {\
+background: rgb(102, 82, 0)\
+}\
+.ace-jdoodle-dark .ace_marker-layer .ace_bracket {\
+margin: -1px 0 0 -1px;\
+border: 1px solid rgba(96, 165, 250, 0.4)\
+}\
+.ace-jdoodle-dark .ace_marker-layer .ace_active-line {\
+background: rgba(255, 255, 255, 0.03)\
+}\
+.ace-jdoodle-dark .ace_gutter-active-line {\
+background-color: rgba(255, 255, 255, 0.04);\
+color: #d1d5db\
+}\
+.ace-jdoodle-dark .ace_marker-layer .ace_selected-word {\
+border: 1px solid rgba(96, 165, 250, 0.3)\
+}\
+.ace-jdoodle-dark .ace_invisible {\
+color: #343b47\
+}\
+.ace-jdoodle-dark .ace_keyword,\
+.ace-jdoodle-dark .ace_meta,\
+.ace-jdoodle-dark .ace_storage {\
+color: #c084fc\
+}\
+.ace-jdoodle-dark .ace_keyword.ace_operator,\
+.ace-jdoodle-dark .ace_punctuation {\
+color: #9ca3af\
+}\
+.ace-jdoodle-dark .ace_constant.ace_character,\
+.ace-jdoodle-dark .ace_constant.ace_language,\
+.ace-jdoodle-dark .ace_constant.ace_numeric,\
+.ace-jdoodle-dark .ace_constant.ace_other {\
+color: #fbbf24\
+}\
+.ace-jdoodle-dark .ace_invalid {\
+color: #f87171;\
+background-color: rgba(248, 113, 113, 0.12)\
+}\
+.ace-jdoodle-dark .ace_invalid.ace_deprecated {\
+color: #fbbf24;\
+background-color: rgba(251, 191, 36, 0.12)\
+}\
+.ace-jdoodle-dark .ace_support.ace_constant {\
+color: #fbbf24\
+}\
+.ace-jdoodle-dark .ace_fold {\
+background-color: #60a5fa;\
+border-color: #d1d5db\
+}\
+.ace-jdoodle-dark .ace_support.ace_function,\
+.ace-jdoodle-dark .ace_support.ace_class,\
+.ace-jdoodle-dark .ace_entity.ace_name.ace_function,\
+.ace-jdoodle-dark .ace_entity.ace_name.ace_tag {\
+color: #60a5fa\
+}\
+.ace-jdoodle-dark .ace_variable,\
+.ace-jdoodle-dark .ace_variable.ace_parameter,\
+.ace-jdoodle-dark .ace_identifier,\
+.ace-jdoodle-dark .ace_entity.ace_other.ace_attribute-name {\
+color: #d1d5db\
+}\
+.ace-jdoodle-dark .ace_string {\
+color: #34d399\
+}\
+.ace-jdoodle-dark .ace_string.ace_regexp {\
+color: #34d399\
+}\
+.ace-jdoodle-dark .ace_comment {\
+font-style: italic;\
+color: #7280b4\
+}\
+.ace-jdoodle-dark .ace_heading,\
+.ace-jdoodle-dark .ace_markup.ace_heading {\
+color: #34d399\
+}\
+.ace-jdoodle-dark .ace_indent-guide {\
+background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAACCAYAAACZgbYnAAAAE0lEQVQImWNgYGBgYHB3d/8PAAOIAdULw8qMAAAAAElFTkSuQmCC) right repeat-y\
+}";
+  var dom = require("ace/lib/dom");
+  dom.importCssString(exports.cssText, exports.cssClass, false);
+});
